@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="22" fill="#0b0a09"/>
+  <!-- "morsel" bite mark: orange circle with a clean bite from the top-right -->
+  <circle cx="50" cy="54" r="34" fill="#ff7a3c"/>
+  <circle cx="80" cy="26" r="17" fill="#0b0a09"/>
+  <!-- accent dot, echoing the 'Morsel.' wordmark -->
+  <circle cx="70" cy="76" r="5.5" fill="#ffd06b"/>
+</svg>
