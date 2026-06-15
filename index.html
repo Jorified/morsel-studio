@@ -37,6 +37,22 @@
   .nav-in{display:flex;align-items:center;justify-content:space-between;height:74px}
   .logo{font-family:'Fraunces',serif;font-weight:900;font-size:1.3rem;letter-spacing:-.01em;display:inline-flex;align-items:center;gap:9px}
   .logo-mark{width:26px;height:26px;display:block}
+
+  /* Buy / book button */
+  .buy-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--accent);color:#1a1206;font-weight:600;
+    border-radius:100px;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;
+    box-shadow:0 8px 30px rgba(255,122,60,.28);
+  }
+  .buy-btn:hover{transform:translateY(-2px);background:#ff8c54;box-shadow:0 12px 40px rgba(255,122,60,.42)}
+  .buy-btn svg{width:18px;height:18px;flex:none}
+  .buy-cta{padding:16px 32px;font-size:1.02rem;margin-top:34px}
+  .nav-buy{padding:10px 20px;font-size:.86rem;box-shadow:0 6px 20px rgba(255,122,60,.22)}
+  .nav-buy svg{width:15px;height:15px}
+  @media(max-width:520px){.nav-buy span{display:none}.nav-buy{padding:10px 14px}}
+  .buy-secure{margin-top:16px;font-size:.78rem;color:var(--muted);display:flex;align-items:center;gap:7px;justify-content:center}
+  .buy-secure svg{width:13px;height:13px;opacity:.7}
   .logo span{color:var(--accent)}
   .nav-links{display:flex;gap:36px;font-size:.9rem;color:var(--muted)}
   .nav-links a:hover{color:var(--text)}
@@ -128,6 +144,10 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
+    <a href="https://buy.stripe.com/bJe8wQ4hph2ObAz6o20Ba00" target="_blank" rel="noopener" class="buy-btn nav-buy">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+      <span>Book a session</span>
+    </a>
   </div>
 </nav>
 
@@ -258,7 +278,17 @@
   <div class="wrap">
     <div class="eyebrow">Available for commissions</div>
     <h2>Let's make your<br>product irresistible.</h2>
-    <a href="mailto:studiomorsel@gmail.com" class="mail">studiomorsel@gmail.com</a>
+    <div>
+      <a href="https://buy.stripe.com/bJe8wQ4hph2ObAz6o20Ba00" target="_blank" rel="noopener" class="buy-btn buy-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        Book a session
+      </a>
+    </div>
+    <div class="buy-secure">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+      Secure checkout via Stripe
+    </div>
+    <a href="mailto:studiomorsel@gmail.com" class="mail" style="margin-top:30px">Or email studiomorsel@gmail.com</a>
     <div class="socials">
       <a href="#">Instagram</a><a href="#">Behance</a><a href="#">Dribbble</a>
     </div>
