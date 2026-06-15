@@ -98,6 +98,11 @@
   figure:hover figcaption{opacity:1;transform:none}
   figcaption h3{font-size:1.15rem;font-weight:600}
   figcaption span{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+  /* Touch / small screens have no hover — keep captions visible so titles aren't lost */
+  @media(hover:none),(max-width:760px){
+    figcaption{opacity:1;transform:none;padding-top:46px}
+    figure:hover img{transform:none}
+  }
 
   /* About */
   .about{padding:110px 0;border-top:1px solid var(--line)}
